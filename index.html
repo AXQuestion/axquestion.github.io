@@ -6,11 +6,17 @@ $(document).ready(function(){
     $("p1").toggle();
   });
 });
+  
 $(document).ready(function(){
   $("#flip").click(function(){
     $("#panel").slideDown("slow");
   });
+
+  $("#flip").click(function(){
+    $("#panel").slideUp();
+  });
 });
+  
 </script>
 <style>
     .silver-background {
@@ -36,8 +42,10 @@ $(document).ready(function(){
     <li>No idea</li>
     <li>No idea</li>
   </ul>
+   
   <button>Press this button to hide and show!</button>
   <p1>Hope you have a great day! :)</p1>
+   
   <div id="flip">Click to slide down panel</div>
   <div id="panel">Never gonna give you up!</div>
  </div>
