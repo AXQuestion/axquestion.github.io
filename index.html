@@ -5,14 +5,13 @@ $(document).ready(function(){
   $("button").click(function(){
     $("p1").toggle();
   });
-});
-  
-$(document).ready(function(){
   $("#flip").click(function(){
     $("#panel").toggle("slow");
   });
+  $("#flip").css("color","white");
+  $("#panel").css("color","white");
 });
-                  
+              
 </script>
 <style>
     .silver-background {
@@ -21,7 +20,7 @@ $(document).ready(function(){
   #panel, #flip {
   padding: 5px;
   text-align: center;
-  background-color: pink;
+  background-color: gray;
   border: solid 1px #c3c3c3;
 }
 
