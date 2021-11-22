@@ -2,8 +2,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+  $("#p1").hide();
   $("button").click(function(){
-    $("p1").toggle();
+    $("#p1").toggle();
   });
   $("#flip").click(function(){
     $("#panel").toggle("slow");
@@ -39,7 +40,7 @@ $(document).ready(function(){
   </ul>
    
   <button class="btn btn-default">Press this button to hide and show!</button>
-  <p1>Hope you have a great day! :)</p1>
+  <p id="p1">Hope you have a great day! :)</p>
    
   <div id="flip">Click to slide down panel</div>
   <div id="panel">Never gonna give you up!</div>
